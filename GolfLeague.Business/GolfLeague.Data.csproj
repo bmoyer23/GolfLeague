@@ -7,8 +7,8 @@
     <ProjectGuid>{C1835C16-A7BC-4B17-AA09-E10DA5244AFE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GolfLeague.Business</RootNamespace>
-    <AssemblyName>GolfLeague.Business</AssemblyName>
+    <RootNamespace>GolfLeague.Data</RootNamespace>
+    <AssemblyName>GolfLeague.Data</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
