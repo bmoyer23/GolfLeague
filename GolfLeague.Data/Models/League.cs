@@ -2,7 +2,7 @@
 
 namespace GolfLeague.Data
 {
-    class League
+    public class League
     {
         public Guid ID { get; set; }
         public string LeagueName { get; set; }

@@ -155,6 +155,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Division.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="League.aspx" />
     <Content Include="packages.config" />
@@ -269,6 +270,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Division.aspx.cs">
+      <DependentUpon>Division.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Division.aspx.designer.cs">
+      <DependentUpon>Division.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -307,6 +315,12 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="UC\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GolfLeague.Data\GolfLeague.Data.csproj">
+      <Project>{c1835c16-a7bc-4b17-aa09-e10da5244afe}</Project>
+      <Name>GolfLeague.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

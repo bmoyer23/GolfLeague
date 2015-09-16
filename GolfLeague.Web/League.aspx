@@ -6,7 +6,8 @@
     <br />
 
     <asp:GridView ID="GridView1" CssClass="table table-bordered table-hover table-striped table-condensed" runat="server" AutoGenerateColumns="false" DataSourceID="SqlDataSource1"
-        DataKeyNames="ID" OnRowDataBound="OnRowDataBound" EmptyDataText="No records has been added." AllowSorting="true">
+        DataKeyNames="ID" OnRowDataBound="OnRowDataBound" EmptyDataText="No records has been added." AllowSorting="true"
+        OnRowCommand="GridView1_RowCommand">
         <Columns>
             <asp:BoundField DataField="LeagueName" HeaderText="Name" SortExpression="LeagueName" />
             <asp:BoundField DataField="DateCreated" HeaderText="Created Date" ItemStyle-Width="200px" SortExpression="DateCreated" />
@@ -14,6 +15,8 @@
                     ShowEditButton="True" SelectText="<i aria-hidden='true' class='glyphicon glyphicon-remove'></i>" />
             <asp:CommandField ButtonType="Link" ControlStyle-CssClass="btn btn-default" ItemStyle-Width="100px"
                     ShowDeleteButton="True" SelectText="<i aria-hidden='true' class='glyphicon glyphicon-remove'></i>" />
+            <asp:ButtonField ButtonType="Link" CommandName="Division" ControlStyle-CssClass="btn btn-success btn-sm" ItemStyle-Width="50px"
+                     Text="<i aria-hidden='true' class='glyphicon glyphicon-new-window'></i>" />
         </Columns>
     </asp:GridView>
 
@@ -23,9 +26,14 @@
             <div class="form-inline">
                 <label for="txtLeagueName">League Name:</label>
                 <asp:TextBox CssClass="form-control" ID="txtLeagueName" runat="server" />
-                <asp:CustomValidator ID="ValidateLeagueName" ControlToValidate="txtLeagueName" runat="server" Display="Dynamic"
-                        ErrorMessage="This League Name already exists" ForeColor="Red" OnServerValidate="ValidateLeagueName_ServerValidate"></asp:CustomValidator>
+                
                 <asp:Button CssClass="btn btn-default" ID="btnAdd" runat="server" Text="Add" OnClick="Insert" />
+                <div class="form-group">
+                    <asp:RequiredFieldValidator ID="CustomValidator1" ControlToValidate="txtLeagueName" runat="server" Display="Dynamic"
+                        ErrorMessage="League Name is required" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:CustomValidator ID="ValidateLeagueName" ControlToValidate="txtLeagueName" runat="server" Display="Dynamic"
+                        ErrorMessage="This League Name already exists" ForeColor="Red" OnServerValidate="ValidateLeagueName_ServerValidate"></asp:CustomValidator>
+                </div>
             </div>
         </div>
     </div>

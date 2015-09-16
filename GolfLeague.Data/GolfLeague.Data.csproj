@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DivisionInterface.cs" />
+    <Compile Include="LeagueInterface.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Division.cs" />
     <Compile Include="Models\Hole.cs" />
