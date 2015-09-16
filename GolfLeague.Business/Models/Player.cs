@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GolfLeague.BusinessObjects
+namespace GolfLeague.Data
 {
     public class Player
     {

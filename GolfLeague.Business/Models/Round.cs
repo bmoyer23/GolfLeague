@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GolfLeague.Business
+namespace GolfLeague.Data
 {
     public class Round
     {

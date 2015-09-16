@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace GolfLeague.Business
+namespace GolfLeague.Data
 {
     class TeamPlayer
     {
