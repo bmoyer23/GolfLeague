@@ -197,6 +197,10 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
+    <Content Include="Team.aspx" />
+    <Content Include="UC\DivisionUC.ascx" />
+    <Content Include="UC\LeagueUC.ascx" />
+    <Content Include="UC\TeamUC.ascx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -304,6 +308,34 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="Team.aspx.cs">
+      <DependentUpon>Team.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Team.aspx.designer.cs">
+      <DependentUpon>Team.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\DivisionUC.ascx.cs">
+      <DependentUpon>DivisionUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\DivisionUC.ascx.designer.cs">
+      <DependentUpon>DivisionUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\LeagueUC.ascx.cs">
+      <DependentUpon>LeagueUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\LeagueUC.ascx.designer.cs">
+      <DependentUpon>LeagueUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\TeamUC.ascx.cs">
+      <DependentUpon>TeamUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\TeamUC.ascx.designer.cs">
+      <DependentUpon>TeamUC.ascx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -314,7 +346,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="UC\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GolfLeague.Data\GolfLeague.Data.csproj">

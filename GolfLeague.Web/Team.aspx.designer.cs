@@ -10,15 +10,15 @@
 namespace GolfLeague {
     
     
-    public partial class League {
+    public partial class Team {
         
         /// <summary>
-        /// LeagueUC control.
+        /// TeamUC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::GolfLeague.UC.LeagueUC LeagueUC;
+        protected global::GolfLeague.UC.TeamUC TeamUC;
     }
 }

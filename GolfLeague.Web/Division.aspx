@@ -1,8 +1,5 @@
-﻿<%@ Page Title="League Maintenance" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="League.aspx.cs" Inherits="GolfLeague.League" %>
-
+﻿<%@ Page Title="Division" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Division.aspx.cs" Inherits="GolfLeague.Division" %>
 <%@ Register Src="~/UC/DivisionUC.ascx" TagPrefix="uc1" TagName="DivisionUC" %>
-<%@ Register Src="~/UC/LeagueUC.ascx" TagPrefix="uc1" TagName="LeagueUC" %>
-
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -13,12 +10,11 @@
     <div class="container">
         <div class="row" id="divLeague">
             <div class="panel panel-info">
-                <div class="panel-heading">Leagues</div>
+                <div class="panel-heading">Divisions</div>
                 <div class="panel-body">
-                    <uc1:LeagueUC runat="server" ID="LeagueUC" ValidationGroup="ValidateLeague" />
+                    <uc1:DivisionUC runat="server" ID="DivisionUC" ValidationGroup="ValidateDivision" />
                 </div>
             </div>
         </div>
     </div>
-
 </asp:Content>

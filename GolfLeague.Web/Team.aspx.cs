@@ -7,12 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace GolfLeague
 {
-    public partial class League : System.Web.UI.Page
+    public partial class Team : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-   
     }
 }
