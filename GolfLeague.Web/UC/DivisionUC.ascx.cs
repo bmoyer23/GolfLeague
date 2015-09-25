@@ -4,11 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Drawing;
 
 namespace GolfLeague.UC
 {
-    public partial class LeagueUC : System.Web.UI.UserControl
+    public partial class DivisionUC : System.Web.UI.UserControl
     {
         public string ValidationGroup
         {
@@ -19,21 +18,22 @@ namespace GolfLeague.UC
             set
             {
                 btnAdd.ValidationGroup = value;
-                this.txtLeagueName.ValidationGroup = value;
-                this.RequireLeagueName.ValidationGroup = value;
-                this.ValidateLeagueName.ValidationGroup = value;
+                this.txtDivisionName.ValidationGroup = value;
+                this.RequireDivisionName.ValidationGroup = value;
+                this.ValidateDivisionName.ValidationGroup = value;
             }
         }
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            this.txtLeagueID.Text = Convert.ToString(Request.QueryString["L_ID"]);
         }
 
         protected void OnRowDataBound(object sender, GridViewRowEventArgs e)
         {
             if (e.Row.RowType == DataControlRowType.DataRow && GridView1.EditIndex != e.Row.RowIndex)
             {
-                (e.Row.Cells[3].Controls[0] as LinkButton).Attributes["onclick"] = "return confirm('Do you want to delete this row?');";
+                (e.Row.Cells[2].Controls[0] as LinkButton).Attributes["onclick"] = "return confirm('Do you want to delete this row?');";
             }
         }
 
@@ -42,16 +42,11 @@ namespace GolfLeague.UC
             if (Page.IsValid == true) SqlDataSource1.Insert();
         }
 
-        protected void ValidateLeagueName_ServerValidate(object source, ServerValidateEventArgs args)
+        protected void ValidateDivisionName_ServerValidate(object source, ServerValidateEventArgs args)
         {
-            GolfLeague.Data.LeagueInterface l = new Data.LeagueInterface();
-            args.IsValid = !l.DoesNameExist(this.txtLeagueName.Text);
+            GolfLeague.Data.DivisionInterface d = new Data.DivisionInterface();
+            args.IsValid = !d.DoesNameExist(this.txtLeagueID.Text, this.txtDivisionName.Text);
 
-        }
-
-        protected void OnSelectedIndexChanged(object sender, EventArgs e)
-        {
-           
         }
 
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -64,21 +59,15 @@ namespace GolfLeague.UC
             catch (Exception ex) { }
 
             GridViewRow selectedRow = this.GridView1.Rows[index];
-
-            // get padaID
-            TableCell cellLeagueID = selectedRow.Cells[1];
-
-            string leagueID = Convert.ToString(GridView1.DataKeys[selectedRow.RowIndex].Value);
+            TableCell cellDivisionID = selectedRow.Cells[1];
+            string divisionID = Convert.ToString(GridView1.DataKeys[selectedRow.RowIndex].Value);
 
 
-            if (e.CommandName.ToLower() == "divisions")
+            if (e.CommandName.ToLower() == "select")
             {
-                Response.Redirect("Division.aspx?L_ID=" + leagueID);
-            }
-            if (e.CommandName.ToLower() == "players")
-            {
-                Response.Redirect("Player.aspx?L_ID=" + leagueID);
+                Response.Redirect("Team.aspx?D_ID=" + divisionID);
             }
         }
+
     }
 }

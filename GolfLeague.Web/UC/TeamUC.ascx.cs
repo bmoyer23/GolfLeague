@@ -26,7 +26,7 @@ namespace GolfLeague.UC
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.txtDivisionID.Text = Convert.ToString(Request.QueryString["L_ID"]);
+            this.txtDivisionID.Text = Convert.ToString(Request.QueryString["D_ID"]);
         }
 
         protected void OnRowDataBound(object sender, GridViewRowEventArgs e)
@@ -59,13 +59,13 @@ namespace GolfLeague.UC
             catch (Exception ex) { }
 
             GridViewRow selectedRow = this.GridView1.Rows[index];
-            TableCell cellDivisionID = selectedRow.Cells[1];
-            string divisionID = Convert.ToString(GridView1.DataKeys[selectedRow.RowIndex].Value);
+            TableCell cellTeamID = selectedRow.Cells[1];
+            string teamID = Convert.ToString(GridView1.DataKeys[selectedRow.RowIndex].Value);
 
 
             if (e.CommandName.ToLower() == "select")
             {
-                Response.Redirect("Team.aspx?D_ID=" + divisionID);
+                Response.Redirect("Player.aspx?T_ID=" + teamID);
             }
         }
 

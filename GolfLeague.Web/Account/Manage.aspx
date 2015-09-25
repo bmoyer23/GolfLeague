@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Manage Account" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="GolfLeague.Account.Manage" %>
+﻿<%@ Page Title="Manage Account" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="GolfLeague.Web.Account.Manage" %>
 
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
@@ -128,7 +128,7 @@
                     </ItemTemplate>
                 </asp:ListView>
 
-                
+                <uc:OpenAuthProviders runat="server" ReturnUrl="~/Account/Manage" />
             </section>
 
         </div>

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GolfLeague.Account {
+namespace GolfLeague.Web.Account {
     
     
     public partial class OpenAuthProviders {

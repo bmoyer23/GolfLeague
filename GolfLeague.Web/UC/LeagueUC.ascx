@@ -6,12 +6,15 @@
     <Columns>
         <asp:BoundField DataField="LeagueName" HeaderText="League Name" SortExpression="LeagueName" />
         <asp:BoundField DataField="DateCreated" HeaderText="Created Date" ItemStyle-Width="200px" SortExpression="DateCreated" />
-        <asp:CommandField ButtonType="Link" ControlStyle-CssClass="btn btn-default" ItemStyle-Width="75px"
-            ShowEditButton="True" CausesValidation="false" />
-        <asp:CommandField ButtonType="Link" ControlStyle-CssClass="btn btn-default" ItemStyle-Width="75px"
-            ShowDeleteButton="True" CausesValidation="false" />
-        <asp:CommandField ButtonType="Link" ControlStyle-CssClass="btn btn-default" ItemStyle-Width="75px"
-            ShowSelectButton="True" CausesValidation="false" />
+        <asp:CommandField ButtonType="Link" ControlStyle-CssClass="btn btn-sm btn-default" ItemStyle-Width="50px"
+            ShowEditButton="True" EditText="<i aria-hidden='true' class='glyphicon glyphicon-pencil'></i>" />
+        <asp:CommandField ButtonType="Link" ControlStyle-CssClass="btn btn-sm btn-default" ItemStyle-Width="50px"
+            ShowDeleteButton="True" DeleteText="<i aria-hidden='true' class='glyphicon glyphicon-remove'></i>" />
+        <asp:ButtonField ButtonType="Link" Text="Divisions" ControlStyle-CssClass="btn btn-default" ItemStyle-Width="75px"
+            CausesValidation="false" CommandName="Divisions" />
+        <asp:ButtonField ButtonType="Link" Text="Players" ControlStyle-CssClass="btn btn-default" ItemStyle-Width="75px"
+            CausesValidation="false" CommandName="Players" />
+
     </Columns>
 </asp:GridView>
 

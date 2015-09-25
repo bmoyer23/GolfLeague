@@ -164,6 +164,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Player.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -200,6 +201,7 @@
     <Content Include="Team.aspx" />
     <Content Include="UC\DivisionUC.ascx" />
     <Content Include="UC\LeagueUC.ascx" />
+    <Content Include="UC\PlayerUC.ascx" />
     <Content Include="UC\TeamUC.ascx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -292,6 +294,13 @@
       <DependentUpon>League.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Player.aspx.cs">
+      <DependentUpon>Player.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Player.aspx.designer.cs">
+      <DependentUpon>Player.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -328,6 +337,13 @@
     </Compile>
     <Compile Include="UC\LeagueUC.ascx.designer.cs">
       <DependentUpon>LeagueUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\PlayerUC.ascx.cs">
+      <DependentUpon>PlayerUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\PlayerUC.ascx.designer.cs">
+      <DependentUpon>PlayerUC.ascx</DependentUpon>
     </Compile>
     <Compile Include="UC\TeamUC.ascx.cs">
       <DependentUpon>TeamUC.ascx</DependentUpon>

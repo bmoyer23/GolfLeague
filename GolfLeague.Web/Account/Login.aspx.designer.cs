@@ -7,10 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GolfLeague.Account {
+namespace GolfLeague.Web.Account {
     
     
     public partial class Login {
+        
         /// <summary>
         /// ErrorMessage control.
         /// </summary>
@@ -19,7 +20,7 @@ namespace GolfLeague.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.PlaceHolder ErrorMessage;
-      
+        
         /// <summary>
         /// FailureText control.
         /// </summary>
@@ -72,6 +73,6 @@ namespace GolfLeague.Account {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::GolfLeague.Account.OpenAuthProviders OpenAuthLogin;
+        protected global::GolfLeague.Web.Account.OpenAuthProviders OpenAuthLogin;
     }
 }

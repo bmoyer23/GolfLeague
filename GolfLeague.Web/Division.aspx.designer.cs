@@ -7,18 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GolfLeague.Web.Account {
+namespace GolfLeague {
     
     
-    public partial class RegisterExternalLogin {
+    public partial class Division {
         
         /// <summary>
-        /// userName control.
+        /// DivisionUC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox userName;
+        protected global::GolfLeague.UC.DivisionUC DivisionUC;
     }
 }

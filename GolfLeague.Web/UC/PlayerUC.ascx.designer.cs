@@ -7,108 +7,117 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GolfLeague.Web.Account {
+namespace GolfLeague.UC {
     
     
-    public partial class Manage {
+    public partial class PlayerUC {
         
         /// <summary>
-        /// successMessage control.
+        /// UpdatePanel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder successMessage;
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
         
         /// <summary>
-        /// setPassword control.
+        /// txtLeagueID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder setPassword;
+        protected global::System.Web.UI.WebControls.TextBox txtLeagueID;
         
         /// <summary>
-        /// password control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox password;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// confirmPassword control.
+        /// txtFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox confirmPassword;
+        protected global::System.Web.UI.WebControls.TextBox txtFirstName;
         
         /// <summary>
-        /// changePasswordHolder control.
+        /// RequireFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder changePasswordHolder;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequireFirstName;
         
         /// <summary>
-        /// CurrentPasswordLabel control.
+        /// ValidateFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CurrentPasswordLabel;
+        protected global::System.Web.UI.WebControls.CustomValidator ValidateFirstName;
         
         /// <summary>
-        /// CurrentPassword control.
+        /// txtLastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CurrentPassword;
+        protected global::System.Web.UI.WebControls.TextBox txtLastName;
         
         /// <summary>
-        /// NewPasswordLabel control.
+        /// txtHandicap control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label NewPasswordLabel;
+        protected global::System.Web.UI.WebControls.TextBox txtHandicap;
         
         /// <summary>
-        /// NewPassword control.
+        /// txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NewPassword;
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
         
         /// <summary>
-        /// ConfirmNewPasswordLabel control.
+        /// txtPhone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ConfirmNewPasswordLabel;
+        protected global::System.Web.UI.WebControls.TextBox txtPhone;
         
         /// <summary>
-        /// ConfirmNewPassword control.
+        /// btnAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ConfirmNewPassword;
+        protected global::System.Web.UI.WebControls.Button btnAdd;
+        
+        /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }

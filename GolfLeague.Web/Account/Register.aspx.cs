@@ -5,9 +5,9 @@ using System;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
-using GolfLeague.Models;
+using GolfLeague.Web.Models;
 
-namespace GolfLeague.Account
+namespace GolfLeague.Web.Account
 {
     public partial class Register : Page
     {

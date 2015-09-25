@@ -3,9 +3,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using GolfLeague.Models;
+using GolfLeague.Web.Models;
 
-namespace GolfLeague.Account
+namespace GolfLeague.Web.Account
 {
     public partial class Manage : System.Web.UI.Page
     {

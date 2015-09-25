@@ -6,7 +6,7 @@ using System.Globalization;
 using System.Linq;
 using System.Web;
 
-namespace GolfLeague.Account
+namespace GolfLeague.Web.Account
 {
     public partial class OpenAuthProviders : System.Web.UI.UserControl
     {

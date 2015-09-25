@@ -8,12 +8,12 @@
             EmptyDataText="No records has been added." AllowSorting="true">
             <Columns>
                 <asp:BoundField DataField="TeamName" HeaderText="Team" SortExpression="TeamName" />
-                <asp:CommandField ButtonType="Link" ControlStyle-CssClass="btn btn-default" ItemStyle-Width="100px"
-                    ShowEditButton="True" SelectText="<i aria-hidden='true' class='glyphicon glyphicon-remove'></i>" />
-                <asp:CommandField ButtonType="Link" ControlStyle-CssClass="btn btn-default" ItemStyle-Width="100px"
-                    ShowDeleteButton="True" SelectText="<i aria-hidden='true' class='glyphicon glyphicon-remove'></i>" />
-                 <asp:CommandField ButtonType="Link" ControlStyle-CssClass="btn btn-default" ItemStyle-Width="75px"
-                    ShowSelectButton="True" CausesValidation="false" />
+                <asp:CommandField ButtonType="Link" ControlStyle-CssClass="btn btn-sm btn-default" ItemStyle-Width="50px"
+                    ShowEditButton="True" EditText="<i aria-hidden='true' class='glyphicon glyphicon-pencil'></i>" />
+                <asp:CommandField ButtonType="Link" ControlStyle-CssClass="btn btn-sm btn-default" ItemStyle-Width="50px"
+                    ShowDeleteButton="True" DeleteText="<i aria-hidden='true' class='glyphicon glyphicon-remove'></i>" />
+                <asp:CommandField ButtonType="Link" ControlStyle-CssClass="btn btn-default" ItemStyle-Width="75px"
+                    ShowSelectButton="True" SelectText="Players" CausesValidation="false" />
             </Columns>
         </asp:GridView>
 

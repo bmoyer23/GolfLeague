@@ -2,9 +2,9 @@
 using Microsoft.Owin.Security;
 using System;
 using System.Web;
-using GolfLeague.Models;
+using GolfLeague.Web.Models;
 
-namespace GolfLeague.Account
+namespace GolfLeague.Web.Account
 {
     public partial class RegisterExternalLogin : System.Web.UI.Page
     {
